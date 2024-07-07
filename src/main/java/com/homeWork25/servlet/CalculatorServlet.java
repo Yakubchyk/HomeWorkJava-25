@@ -1,7 +1,7 @@
 package com.homeWork25.servlet;
 
-import com.homeWork25.servlet.model.Operation;
-import com.homeWork25.servlet.servise.OperationService;
+import com.homeWork25.model.Operation;
+import com.homeWork25.servise.OperationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

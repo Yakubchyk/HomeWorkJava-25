@@ -1,4 +1,4 @@
-package com.homeWork25.servlet.model;
+package com.homeWork25.model;
 
 public class Operation {
     private double num1;

@@ -1,6 +1,6 @@
-package com.homeWork25.servlet.servise;
+package com.homeWork25.servise;
 
-import com.homeWork25.servlet.model.Operation;
+import com.homeWork25.model.Operation;
 
 public class OperationService {
     public Operation getResult(Operation operation) {
