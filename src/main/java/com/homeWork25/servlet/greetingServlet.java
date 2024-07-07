@@ -8,8 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/greeting")
+@WebServlet(name = "greetingServlet", value = "/greeting", loadOnStartup = 1)
 public class greetingServlet extends HttpServlet {
+    @Override
+    public void init() throws ServletException {
+        System.out.println("Hello World !");
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
@@ -17,8 +22,13 @@ public class greetingServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
         out.println("<html>");
         out.println("<body>");
-        out.println("<h1>greeting</h1>");
+        out.println("<h3>greeting</h3>");
         out.println("<h2>Hello " + name + "</h2>");
         out.println("</body>");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("Destroy All !!!");
     }
 }
