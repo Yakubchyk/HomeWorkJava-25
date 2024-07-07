@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/calculator")
+@WebServlet(name = "CalculatorServlet", urlPatterns = "/calculator", loadOnStartup = 0)
 public class CalculatorServlet extends HttpServlet {
 
     private final OperationService operationService = new OperationService();
