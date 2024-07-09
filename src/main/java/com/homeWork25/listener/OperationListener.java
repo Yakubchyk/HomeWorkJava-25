@@ -15,7 +15,6 @@ public class OperationListener implements ServletContextListener {
         System.out.println("Context Initialized");
         ServletContext servletContext = sce.getServletContext();
 
-
     }
 
     @Override

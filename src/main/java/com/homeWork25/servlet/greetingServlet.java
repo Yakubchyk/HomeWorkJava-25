@@ -25,6 +25,9 @@ public class greetingServlet extends HttpServlet {
         out.println("<h3>greeting</h3>");
         out.println("<h2>Hello " + name + "</h2>");
         out.println("</body>");
+
+        req.setAttribute("greeting", "Hello " + name + "!");
+        req.getServletContext().setAttribute("myName", name);
     }
 
     @Override

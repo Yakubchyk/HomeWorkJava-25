@@ -39,6 +39,12 @@ public class CalculatorServlet extends HttpServlet {
 
         writer.println("<h1> " + formated + "</h1");
         writer.println("</body>");
-        writer.println("</head>");
+
+        req.getAttribute("greeting");
+
+        String myName = (String) req.getServletContext().getAttribute("myName");
+        writer.println("<h2>" + myName + "</h2>");
+
+        writer.println("</html>");
     }
 }
