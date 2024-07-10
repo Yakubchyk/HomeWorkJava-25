@@ -1,9 +1,7 @@
 package com.homeWork25.servlet;
-
 import com.google.gson.Gson;
 import com.homeWork25.model.Operation;
 import com.homeWork25.servise.OperationService;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
